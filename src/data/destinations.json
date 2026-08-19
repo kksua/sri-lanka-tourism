@@ -1,0 +1,272 @@
+[
+  {
+    "id": 1,
+    "name": "Yala National Park",
+    "province": "Southern Province",
+    "themes": ["wildlife", "nature"],
+    "image": "src/assets/images/Yala.avif",
+    "galleryImages": [
+      "src/assets/images/Yala.avif",
+      "src/assets/images/flamingo.jpg",
+      "src/assets/images/yala national park.jpeg"
+    ],
+    "description": "A national park known for leopards, elephants and birdlife.",
+    "longDescription": "Yala National Park is one of Sri Lanka's most memorable wilderness areas, where dry forest, open grassland and coastal lagoons create a dramatic habitat for wildlife. Visitors come for early morning and late afternoon safaris, hoping to spot leopards, elephants, crocodiles, buffalo and an impressive variety of birds across the park's changing landscapes.",
+    "attractions": ["Leopard safaris", "Elephant herds", "Birdwatching", "Coastal lagoons"]
+  },
+  {
+    "id": 2,
+    "name": "Sigiriya Rock Fortress",
+    "province": "Central Province",
+    "themes": ["heritage", "culture", "adventure"],
+    "image": "src/assets/images/lion rock.jpg",
+    "galleryImages": [
+      "src/assets/images/lion rock.jpg",
+      "src/assets/images/sigiriya top.jpg",
+      "src/assets/images/Sigiriya_fresco_sacred.jpg"
+    ],
+    "description": "An ancient sky palace with frescoes, gardens and sweeping views.",
+    "longDescription": "Sigiriya Rock Fortress rises from the plains as one of Sri Lanka's most iconic heritage landmarks. The climb passes ancient water gardens, frescoes and stone stairways before reaching the summit, where palace ruins and panoramic views reveal why this rock citadel remains a powerful symbol of the island's history.",
+    "attractions": ["Lion's Gate", "Mirror Wall", "Royal gardens", "Summit views"]
+  },
+  {
+    "id": 3,
+    "name": "Ella",
+    "province": "Uva Province",
+    "themes": ["nature", "adventure"],
+    "image": "src/assets/images/ella train.avif",
+    "galleryImages": [
+      "src/assets/images/ella train.avif",
+      "src/assets/images/Little Adam's Peak.jpg",
+      "src/assets/images/ravana falls.jpg"
+    ],
+    "description": "A misty hill-country escape with tea fields, hikes and train journeys.",
+    "longDescription": "Ella is a relaxed hill-country town surrounded by tea estates, forested slopes and cool mountain air. It is a favourite base for scenic hikes, waterfall visits and train journeys, with viewpoints that open onto layered valleys and cloud-softened ridgelines.",
+    "attractions": ["Nine Arches Bridge", "Little Adam's Peak", "Tea estates", "Ravana Falls"]
+  },
+  {
+    "id": 4,
+    "name": "Galle Fort",
+    "province": "Southern Province",
+    "themes": ["heritage", "culture", "beach"],
+    "image": "src/assets/images/galle fort.jpg",
+    "galleryImages": [
+      "src/assets/images/galle fort.jpg",
+      "src/assets/images/galle.webp",
+      "src/assets/images/baby turtles.jpg"
+    ],
+    "description": "A coastal fort city lined with colonial streets, cafes and ocean walls.",
+    "longDescription": "Galle Fort blends ocean views with centuries of layered history. Inside the old ramparts, narrow streets lead past colonial architecture, boutique stays, museums, cafes and galleries, while the sea wall remains one of the best places to walk at sunset.",
+    "attractions": ["Fort ramparts", "Dutch Hospital", "Lighthouse", "Pedlar Street"]
+  },
+  {
+    "id": 5,
+    "name": "Mirissa",
+    "province": "Southern Province",
+    "themes": ["beach", "nature"],
+    "image": "src/assets/images/mirissa beach.avif",
+    "galleryImages": [
+      "src/assets/images/mirissa beach.avif",
+      "src/assets/images/mirissa-coconut tree hill.jpg",
+      "src/assets/images/whale-watching-1_63871.jpg"
+    ],
+    "description": "A laid-back beach town for whale watching, surfing and golden sunsets.",
+    "longDescription": "Mirissa is a warm southern-coast escape known for palm-framed beaches, easy surf breaks and boat trips into deep blue water. Days here move between swimming, whale watching, seafood dinners and sunset viewpoints overlooking the curve of the bay.",
+    "attractions": ["Whale watching", "Secret Beach", "Coconut Tree Hill", "Surf breaks"]
+  },
+  {
+    "id": 6,
+    "name": "Kandy",
+    "province": "Central Province",
+    "themes": ["culture", "heritage", "nature"],
+    "image": "src/assets/images/Kandy-Sri-Lanka.jpg",
+    "galleryImages": [
+      "src/assets/images/Kandy-Sri-Lanka.jpg",
+      "src/assets/images/temple of tooth.jpeg",
+      "src/assets/images/royal-botanic-gardens.webp"
+    ],
+    "description": "Sri Lanka's cultural heart, home to sacred temples and lakeside views.",
+    "longDescription": "Kandy sits among green hills and carries a deep cultural importance for Sri Lanka. The city is known for the Temple of the Tooth, lakeside walks, botanical gardens and traditional performances, making it a rich stop between ancient heritage and the central highlands.",
+    "attractions": ["Temple of the Tooth", "Kandy Lake", "Royal Botanical Gardens", "Cultural dance"]
+  },
+  {
+    "id": 7,
+    "name": "Nuwara Eliya",
+    "province": "Central Province",
+    "themes": ["nature", "culture"],
+    "image": "src/assets/images/Tea estates.webp",
+    "galleryImages": [
+      "src/assets/images/Tea estates.webp",
+      "src/assets/images/Lake Gregory2.jpg",
+      "src/assets/images/little england.jpg"
+    ],
+    "description": "A cool hill-country town surrounded by tea estates, gardens and colonial charm.",
+    "longDescription": "Nuwara Eliya is known for its cool climate, rolling tea plantations and old-world hill-country atmosphere. Visitors come for scenic drives through misty estates, flower gardens, lake walks and relaxed stays that feel very different from Sri Lanka's tropical coast.",
+    "attractions": ["Tea estates", "Gregory Lake", "Horton Plains", "Victoria Park"]
+  },
+  {
+    "id": 8,
+    "name": "Colombo",
+    "province": "Western Province",
+    "themes": ["culture", "heritage"],
+    "image": "src/assets/images/colombo.jpg",
+    "galleryImages": [
+      "src/assets/images/colombo.jpg",
+      "src/assets/images/Galle Face Green.jpg",
+      "src/assets/images/the-areal-view-of-the.jpg"
+    ],
+    "description": "Sri Lanka's lively capital with food, markets, oceanfront walks and modern city energy.",
+    "longDescription": "Colombo brings together Sri Lanka's contemporary pace and layered history. The city is a strong first or final stop for travellers, with oceanfront promenades, colonial buildings, temples, street food, galleries and shopping districts all sitting close together.",
+    "attractions": ["Galle Face Green", "Pettah Market", "Gangaramaya Temple", "Dutch Hospital"]
+  },
+  {
+    "id": 9,
+    "name": "Dambulla",
+    "province": "Central Province",
+    "themes": ["heritage", "culture"],
+    "image": "src/assets/images/dambulla cave temple.jpeg",
+    "galleryImages": [
+      "src/assets/images/dambulla cave temple.jpeg",
+      "src/assets/images/pidurutalagala.jpeg",
+      "src/assets/images/golden temple.jpg"
+    ],
+    "description": "A historic town famous for cave temples and easy access to the Cultural Triangle.",
+    "longDescription": "Dambulla is best known for its remarkable cave temple complex, where Buddhist murals and statues fill a series of sacred rock chambers. It also works beautifully as a base for exploring nearby Sigiriya, ancient cities and rural landscapes.",
+    "attractions": ["Cave Temple", "Golden Temple", "Cultural Triangle", "Rock viewpoints"]
+  },
+  {
+    "id": 10,
+    "name": "Jaffna",
+    "province": "Northern Province",
+    "themes": ["culture", "heritage", "beach"],
+    "image": "src/assets/images/JAFFNA.jpg",
+    "galleryImages": [
+      "src/assets/images/JAFFNA.jpg",
+      "src/assets/images/nagadeepa.jpeg",
+      "src/assets/images/delft island.jpg"
+    ],
+    "description": "A northern cultural hub known for temples, islands, cuisine and coastal landscapes.",
+    "longDescription": "Jaffna offers a distinct northern rhythm, shaped by Tamil culture, temple traditions, quiet islands and bold regional cuisine. It rewards travellers who want to go beyond the classic routes and experience a different side of Sri Lanka's history and identity.",
+    "attractions": ["Nallur Temple", "Jaffna Fort", "Delft Island", "Casuarina Beach"]
+  },
+  {
+    "id": 11,
+    "name": "Trincomalee",
+    "province": "Eastern Province",
+    "themes": ["beach", "nature", "culture"],
+    "image": "src/assets/images/trincomalee.jpg",
+    "galleryImages": [
+      "src/assets/images/trincomalee.jpg",
+      "src/assets/images/Fort Frederick.avif",
+      "src/assets/images/Koneswaram Temple.jpg"
+    ],
+    "description": "An east-coast destination with beaches, temples, snorkelling and blue-water bays.",
+    "longDescription": "Trincomalee is loved for its calm east-coast beaches, clear water and natural harbour. Travellers can mix relaxed beach days with temple visits, snorkelling trips, whale watching seasons and boat rides to nearby marine areas.",
+    "attractions": ["Nilaveli Beach", "Pigeon Island", "Koneswaram Temple", "Fort Frederick"]
+  },
+  {
+    "id": 12,
+    "name": "Polonnaruwa",
+    "province": "North Central Province",
+    "themes": ["heritage", "culture"],
+    "image": "src/assets/images/Polonnaruwa.jpg",
+    "galleryImages": [
+      "src/assets/images/Polonnaruwa.jpg",
+      "src/assets/images/The-Gal-Vihara-in-Polonnaruwa--Sri-Lanka-Tours--On-The-Go-Tours-294671461670778.jpg",
+      "src/assets/images/Parakrama Samudra.jpg"
+    ],
+    "description": "An ancient royal city filled with ruins, temples, reservoirs and stone sculpture.",
+    "longDescription": "Polonnaruwa is one of Sri Lanka's great ancient capitals, with archaeological sites spread across a peaceful landscape of reservoirs and forest edges. Cycling between palaces, temples and carved stone monuments is one of the most rewarding ways to explore it.",
+    "attractions": ["Gal Vihara", "Royal Palace", "Parakrama Samudra", "Vatadage"]
+  },
+  {
+    "id": 13,
+    "name": "Matale",
+    "province": "Central Province",
+    "themes": ["nature", "culture", "adventure"],
+    "image": "src/assets/images/Matale spice garden.jpg",
+    "galleryImages": [
+      "src/assets/images/Matale spice garden.jpg",
+      "src/assets/images/Aluviharaya-rock-temple-near-matale-1024x576.jpg",
+      "src/assets/images/Knuckles Range.jpeg"
+    ],
+    "description": "A central highland district known for spice gardens, temples and mountain scenery.",
+    "longDescription": "Matale sits between Kandy and the northern plains, offering spice gardens, temples, forested hills and access to scenic central landscapes. It is a useful stop for travellers interested in food culture, rural routes and quieter hill-country experiences.",
+    "attractions": ["Spice gardens", "Aluvihare Temple", "Riverston", "Knuckles Range"]
+  },
+  {
+    "id": 14,
+    "name": "Arugam Bay",
+    "province": "Eastern Province",
+    "themes": ["beach", "adventure", "nature", "wildlife"],
+    "image": "src/assets/images/Arugam Bay.webp",
+    "galleryImages": [
+      "src/assets/images/Arugam Bay.webp",
+      "src/assets/images/Lagoon safari.jpeg",
+      "src/assets/images/birds-at-kumana.jpg"
+    ],
+    "description": "A relaxed east-coast surf town with beaches, lagoons and nearby wildlife areas.",
+    "longDescription": "Arugam Bay is Sri Lanka's best-known surf destination, but it also has an easy beach-town mood, lagoon trips and nearby wildlife routes. Travellers come for waves, sunrise coastlines, casual cafes and access to the wilder eastern side of the island.",
+    "attractions": ["Main Point surf", "Peanut Farm", "Lagoon safari", "Kumana National Park"]
+  },
+  {
+    "id": 15,
+    "name": "Weligama",
+    "province": "Southern Province",
+    "themes": ["beach", "adventure"],
+    "image": "src/assets/images/Weligama.jpg",
+    "galleryImages": [
+      "src/assets/images/Weligama.jpg",
+      "src/assets/images/Weligama-Surf-Camps.jpg",
+      "src/assets/images/Taprobane Island.webp"
+    ],
+    "description": "A southern surf bay known for beginner-friendly waves, beach stays and coastal cafes.",
+    "longDescription": "Weligama is a mellow southern-coast base with a wide bay, surf schools and easy access to neighbouring beaches. It is especially popular with beginner surfers, digital nomads and travellers who want a relaxed beach rhythm with plenty of cafes and short day trips.",
+    "attractions": ["Beginner surf", "Weligama Bay", "Taprobane Island", "Coastal cafes"]
+  },
+  {
+    "id": 16,
+    "name": "Gampola",
+    "province": "Central Province",
+    "themes": ["nature", "culture", "adventure"],
+    "image": "src/assets/images/ambuluvava.jpg",
+    "galleryImages": [
+      "src/assets/images/ambuluvava.jpg",
+      "src/assets/images/Ambuluwawa Biodiversity Complex.jpg",
+      "src/assets/images/ambuluwawa-view-to-sri-lanka-s-hillcountry_orig.jpg"
+    ],
+    "description": "A Central Province town best known as the gateway to Ambuluwawa Tower.",
+    "longDescription": "Gampola is the closest major town for visiting Ambuluwawa Tower, a hilltop biodiversity and multi-religious complex known for its spiral tower and sweeping views across the central highlands. It works well as a short adventure stop between Kandy, Peradeniya and Sri Lanka's tea-country routes.",
+    "attractions": ["Ambuluwawa Tower", "Ambuluwawa Biodiversity Complex", "Hill-country views", "Multi-religious centre"]
+  },
+  {
+    "id": 17,
+    "name": "Udawalawe",
+    "province": "Sabaragamuwa Province",
+    "themes": ["wildlife", "nature"],
+    "image": "src/assets/images/Udawalawe.jpeg",
+    "galleryImages": [
+      "src/assets/images/Udawalawe.jpeg",
+      "src/assets/images/Udawalawe safari.webp",
+      "src/assets/images/Udawalawe water baffalo.jpg"
+    ],
+    "description": "A wildlife destination famous for elephants, open grasslands and reservoir views.",
+    "longDescription": "Udawalawe is one of Sri Lanka's best places to see elephants in open landscapes. The national park surrounds the Udawalawe Reservoir, creating a mix of grassland, scrub forest and water edges where safaris often reveal elephants, buffalo, deer, crocodiles and rich birdlife.",
+    "attractions": ["Udawalawe National Park", "Elephant Transit Home", "Udawalawe Reservoir", "Safari drives"]
+  },
+  {
+    "id": 18,
+    "name": "Wilpattu",
+    "province": "North Western Province",
+    "themes": ["wildlife", "nature"],
+    "image": "src/assets/images/Wilpattu leopard.jpeg",
+    "galleryImages": [
+      "src/assets/images/Wilpattu leopard.jpeg",
+      "src/assets/images/Wilpattu bear.webp",
+      "src/assets/images/wilpattu deer.jpg"
+    ],
+    "description": "A vast national park known for natural lakes, leopards and quieter safari routes.",
+    "longDescription": "Wilpattu is Sri Lanka's largest national park and is known for its villus, or natural rain-fed lakes, scattered through dry-zone forest. It offers a quieter safari experience, with chances to see leopards, sloth bears, deer, crocodiles and many species of birds.",
+    "attractions": ["Wilpattu National Park", "Natural villus", "Leopard tracking", "Birdwatching"]
+  }
+]

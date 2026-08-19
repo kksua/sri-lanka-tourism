@@ -1,0 +1,1 @@
+{"root":["./src/main.tsx","./src/vite-env.d.ts","./src/components/destinationcard.tsx","./src/components/experiencesection.tsx","./src/components/hero.tsx","./src/components/powerbisection.tsx","./src/components/themefilter.tsx","./src/pages/home.tsx","./src/types/destination.ts","./src/types/experience.ts"],"version":"5.9.3"}

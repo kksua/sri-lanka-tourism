@@ -18,11 +18,18 @@
 
 ---
 
-**Live website:** [Sri Lanka Travel Explorer]
+**Live website:** [Sri Lanka Travel Explorer](https://sri-lanka-tourism-blond.vercel.app/)
 
-**Website demo:**
+**Website demo:** 
+
+https://github.com/user-attachments/assets/6888101e-271c-450d-8e24-428ed0b16b02
+
+
+
 
 **Power BI demo:**
+
+https://github.com/user-attachments/assets/e46698fe-169d-4172-8831-01e0a5cb076a
 
 > The website demo presents the theme-based destination experience. The Power BI demo shows the complementary tourism-arrival analysis and interactive filtering workflow.
 
@@ -97,13 +104,17 @@ The Power BI component examines tourist arrivals to Sri Lanka across 2024, 2025 
 - Single-select year slicer for 2024, 2025 and 2026
 - Dynamic reporting period based on the selected year
 
-### Power BI demo
+### Power Query Transformation
+
+<img width="949" height="468" alt="power BI 0" src="https://github.com/user-attachments/assets/501b87e0-d0de-4642-a02c-d971b829c6f5" />
+
+> The screenshot shows the analysis-ready structure produced in Power Query. 
 
 > Public Power BI embedding is unavailable because the organisation-managed Power BI tenant disables Publish to web. The dashboard workflow is therefore presented through the demo above.
 
 ### Data source
 
-Tourist-arrival data: [Sri Lanka Tourism Development Authority]
+Tourist-arrival data: [Sri Lanka Tourism Development Authority](https://www.sltda.gov.lk/en/tourist-arrivals-from-all-countries?utm)
 
 ---
 
@@ -126,8 +137,8 @@ src/
 ### Clone the repository
 
 ```bash
-git clone YOUR_REPOSITORY_URL
-cd YOUR_REPOSITORY_NAME
+git clone https://github.com/kksua/sri-lanka-tourism.git
+cd sri-lanka-tourism
 ```
 
 ### Install dependencies

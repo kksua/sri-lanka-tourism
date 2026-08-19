@@ -3,30 +3,30 @@
     "id": 1,
     "name": "Poya Days",
     "description": "Monthly full-moon days carry a quiet spiritual rhythm across Sri Lanka. Temples fill with white-clad devotees, lanterns glow in the evening, and many towns slow down for reflection, offerings and family visits.",
-    "image": "src/assets/images/experiences/poya.jpg"
+    "image": "src/assets/images/poya.jpg"
   },
   {
     "id": 2,
     "name": "Sri Lankan Food",
     "description": "Sri Lankan food is bold, fragrant and deeply regional, from rice and curry spreads to hoppers, sambols, kottu and fresh seafood. Meals are often generous, colourful and shaped by spice, coconut and seasonal produce.",
-    "image": "src/assets/images/experiences/lankan food.jpg"
+    "image": "src/assets/images/lankan food.jpg"
   },
   {
     "id": 3,
     "name": "Religious Festivals",
     "description": "Peraheras bring together dancers, drummers, torch bearers and decorated processions in memorable cultural nights. The best known is the Kandy Esala Perahera, usually held in July or August, with final dates changing each year by the lunar calendar.",
-    "image": "src/assets/images/experiences/Kandy Esala Perahera (Festival of the Tooth) Sri lanka.webp"
+    "image": "src/assets/images/Kandy Esala Perahera (Festival of the Tooth) Sri lanka.webp"
   },
   {
     "id": 4,
     "name": "New Year",
     "description": "Sinhala and Tamil New Year is celebrated around April 13-14, marking the sun's movement from Meena Rashiya to Mesha Rashiya. Homes are prepared, meals are shared at auspicious times, and villages come alive with rituals, sweets and games.",
-    "image": "src/assets/images/experiences/new year.jpg"
+    "image": "src/assets/images/new year.jpg"
   },
   {
     "id": 5,
     "name": "Tea Culture",
     "description": "Tea culture is woven into the central highlands, where mist moves over estates and factory towns. Visitors can explore plantations and tastings around Nuwara Eliya, Ella, Haputale, Kandy and Hatton, following the story from leaf to cup.",
-    "image": "src/assets/images/experiences/Tea Culture.jpg"
+    "image": "src/assets/images/Tea Culture.jpg"
   }
 ]

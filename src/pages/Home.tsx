@@ -259,7 +259,7 @@ export default function Home() {
       <main>
         <section className="quote-section" id="quote" ref={quoteRef}>
           <p className="quote-line">
-            {"'Pearls don't lie on the sea shore. If you want one, you must dive for it'"
+            {"' Pearls don't lie on the sea shore. If you want one, you must dive for it '"
               .split(" ")
               .map((word, index) => (
                 <span key={`${word}-${index}`}>{word}</span>

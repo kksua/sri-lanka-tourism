@@ -3,7 +3,10 @@
     "id": 1,
     "name": "Yala National Park",
     "province": "Southern Province",
-    "themes": ["wildlife", "nature"],
+    "themes": [
+      "wildlife",
+      "nature"
+    ],
     "image": "src/assets/images/Yala.avif",
     "galleryImages": [
       "src/assets/images/Yala.avif",
@@ -12,13 +15,54 @@
     ],
     "description": "A national park known for leopards, elephants and birdlife.",
     "longDescription": "Yala National Park is one of Sri Lanka's most memorable wilderness areas, where dry forest, open grassland and coastal lagoons create a dramatic habitat for wildlife. Visitors come for early morning and late afternoon safaris, hoping to spot leopards, elephants, crocodiles, buffalo and an impressive variety of birds across the park's changing landscapes.",
-    "attractions": ["Leopard safaris", "Elephant herds", "Birdwatching", "Coastal lagoons"]
+    "attractions": [
+      "Leopard safaris",
+      "Elephant herds",
+      "Birdwatching",
+      "Coastal lagoons"
+    ],
+    "coordinates": {
+      "lat": 6.3728,
+      "lng": 81.5168,
+      "verificationStatus": "seed"
+    },
+    "recommendedDays": 2,
+    "suitableMonths": [
+      "February",
+      "March",
+      "June",
+      "July",
+      "August",
+      "September"
+    ],
+    "activities": [
+      "Safari drives",
+      "Birdwatching",
+      "Lagoon viewpoints"
+    ],
+    "nearbyDestinations": [
+      "Udawalawe",
+      "Arugam Bay"
+    ],
+    "culturalNotes": [
+      "Keep a respectful distance from wildlife and follow park rules."
+    ],
+    "seasonalNotes": [
+      "Dry months can improve wildlife visibility around water sources."
+    ],
+    "travelWarnings": [
+      "Safari sightings are never guaranteed; confirm park access locally."
+    ]
   },
   {
     "id": 2,
     "name": "Sigiriya Rock Fortress",
     "province": "Central Province",
-    "themes": ["heritage", "culture", "adventure"],
+    "themes": [
+      "heritage",
+      "culture",
+      "adventure"
+    ],
     "image": "src/assets/images/lion rock.jpg",
     "galleryImages": [
       "src/assets/images/lion rock.jpg",
@@ -27,13 +71,53 @@
     ],
     "description": "An ancient sky palace with frescoes, gardens and sweeping views.",
     "longDescription": "Sigiriya Rock Fortress rises from the plains as one of Sri Lanka's most iconic heritage landmarks. The climb passes ancient water gardens, frescoes and stone stairways before reaching the summit, where palace ruins and panoramic views reveal why this rock citadel remains a powerful symbol of the island's history.",
-    "attractions": ["Lion's Gate", "Mirror Wall", "Royal gardens", "Summit views"]
+    "attractions": [
+      "Lion's Gate",
+      "Mirror Wall",
+      "Royal gardens",
+      "Summit views"
+    ],
+    "coordinates": {
+      "lat": 7.9568,
+      "lng": 80.7603,
+      "verificationStatus": "seed"
+    },
+    "recommendedDays": 1,
+    "suitableMonths": [
+      "January",
+      "February",
+      "March",
+      "July",
+      "August",
+      "December"
+    ],
+    "activities": [
+      "Heritage climb",
+      "Garden walk",
+      "Fresco viewing"
+    ],
+    "nearbyDestinations": [
+      "Dambulla",
+      "Polonnaruwa"
+    ],
+    "culturalNotes": [
+      "Dress and behave respectfully around heritage and sacred areas."
+    ],
+    "seasonalNotes": [
+      "Start early to avoid heat and crowds."
+    ],
+    "travelWarnings": [
+      "The climb has exposed stairs and may not suit severe height sensitivity."
+    ]
   },
   {
     "id": 3,
     "name": "Ella",
     "province": "Uva Province",
-    "themes": ["nature", "adventure"],
+    "themes": [
+      "nature",
+      "adventure"
+    ],
     "image": "src/assets/images/ella train.avif",
     "galleryImages": [
       "src/assets/images/ella train.avif",
@@ -42,13 +126,54 @@
     ],
     "description": "A misty hill-country escape with tea fields, hikes and train journeys.",
     "longDescription": "Ella is a relaxed hill-country town surrounded by tea estates, forested slopes and cool mountain air. It is a favourite base for scenic hikes, waterfall visits and train journeys, with viewpoints that open onto layered valleys and cloud-softened ridgelines.",
-    "attractions": ["Nine Arches Bridge", "Little Adam's Peak", "Tea estates", "Ravana Falls"]
+    "attractions": [
+      "Nine Arches Bridge",
+      "Little Adam's Peak",
+      "Tea estates",
+      "Ravana Falls"
+    ],
+    "coordinates": {
+      "lat": 6.8667,
+      "lng": 81.0466,
+      "verificationStatus": "seed"
+    },
+    "recommendedDays": 2,
+    "suitableMonths": [
+      "January",
+      "February",
+      "March",
+      "April",
+      "July",
+      "August"
+    ],
+    "activities": [
+      "Hiking",
+      "Tea estate visits",
+      "Waterfalls"
+    ],
+    "nearbyDestinations": [
+      "Nuwara Eliya",
+      "Udawalawe"
+    ],
+    "culturalNotes": [
+      "Tea estates are working landscapes; ask before entering private areas."
+    ],
+    "seasonalNotes": [
+      "Hill-country weather can change quickly."
+    ],
+    "travelWarnings": [
+      "Trails can be slippery after rain."
+    ]
   },
   {
     "id": 4,
     "name": "Galle Fort",
     "province": "Southern Province",
-    "themes": ["heritage", "culture", "beach"],
+    "themes": [
+      "heritage",
+      "culture",
+      "beach"
+    ],
     "image": "src/assets/images/galle fort.jpg",
     "galleryImages": [
       "src/assets/images/galle fort.jpg",
@@ -57,13 +182,51 @@
     ],
     "description": "A coastal fort city lined with colonial streets, cafes and ocean walls.",
     "longDescription": "Galle Fort blends ocean views with centuries of layered history. Inside the old ramparts, narrow streets lead past colonial architecture, boutique stays, museums, cafes and galleries, while the sea wall remains one of the best places to walk at sunset.",
-    "attractions": ["Fort ramparts", "Dutch Hospital", "Lighthouse", "Pedlar Street"]
+    "attractions": [
+      "Fort ramparts",
+      "Dutch Hospital",
+      "Lighthouse",
+      "Pedlar Street"
+    ],
+    "coordinates": {
+      "lat": 6.0269,
+      "lng": 80.217,
+      "verificationStatus": "seed"
+    },
+    "recommendedDays": 1,
+    "suitableMonths": [
+      "January",
+      "February",
+      "March",
+      "December"
+    ],
+    "activities": [
+      "Fort walks",
+      "Museums",
+      "Coastal sunset"
+    ],
+    "nearbyDestinations": [
+      "Weligama",
+      "Mirissa"
+    ],
+    "culturalNotes": [
+      "The fort is a lived-in heritage town; keep noise low in residential lanes."
+    ],
+    "seasonalNotes": [
+      "Southwest monsoon months can bring heavier coastal rain."
+    ],
+    "travelWarnings": [
+      "Ocean walls can be unsafe during rough seas."
+    ]
   },
   {
     "id": 5,
     "name": "Mirissa",
     "province": "Southern Province",
-    "themes": ["beach", "nature"],
+    "themes": [
+      "beach",
+      "nature"
+    ],
     "image": "src/assets/images/mirissa beach.avif",
     "galleryImages": [
       "src/assets/images/mirissa beach.avif",
@@ -72,13 +235,52 @@
     ],
     "description": "A laid-back beach town for whale watching, surfing and golden sunsets.",
     "longDescription": "Mirissa is a warm southern-coast escape known for palm-framed beaches, easy surf breaks and boat trips into deep blue water. Days here move between swimming, whale watching, seafood dinners and sunset viewpoints overlooking the curve of the bay.",
-    "attractions": ["Whale watching", "Secret Beach", "Coconut Tree Hill", "Surf breaks"]
+    "attractions": [
+      "Whale watching",
+      "Secret Beach",
+      "Coconut Tree Hill",
+      "Surf breaks"
+    ],
+    "coordinates": {
+      "lat": 5.9483,
+      "lng": 80.4716,
+      "verificationStatus": "seed"
+    },
+    "recommendedDays": 2,
+    "suitableMonths": [
+      "January",
+      "February",
+      "March",
+      "December"
+    ],
+    "activities": [
+      "Beach time",
+      "Whale watching",
+      "Surfing"
+    ],
+    "nearbyDestinations": [
+      "Weligama",
+      "Galle Fort"
+    ],
+    "culturalNotes": [
+      "Support licensed marine operators and responsible wildlife viewing."
+    ],
+    "seasonalNotes": [
+      "Whale watching and sea conditions are seasonal."
+    ],
+    "travelWarnings": [
+      "Check sea conditions before swimming or boat trips."
+    ]
   },
   {
     "id": 6,
     "name": "Kandy",
     "province": "Central Province",
-    "themes": ["culture", "heritage", "nature"],
+    "themes": [
+      "culture",
+      "heritage",
+      "nature"
+    ],
     "image": "src/assets/images/Kandy-Sri-Lanka.jpg",
     "galleryImages": [
       "src/assets/images/Kandy-Sri-Lanka.jpg",
@@ -87,13 +289,54 @@
     ],
     "description": "Sri Lanka's cultural heart, home to sacred temples and lakeside views.",
     "longDescription": "Kandy sits among green hills and carries a deep cultural importance for Sri Lanka. The city is known for the Temple of the Tooth, lakeside walks, botanical gardens and traditional performances, making it a rich stop between ancient heritage and the central highlands.",
-    "attractions": ["Temple of the Tooth", "Kandy Lake", "Royal Botanical Gardens", "Cultural dance"]
+    "attractions": [
+      "Temple of the Tooth",
+      "Kandy Lake",
+      "Royal Botanical Gardens",
+      "Cultural dance"
+    ],
+    "coordinates": {
+      "lat": 7.2906,
+      "lng": 80.6337,
+      "verificationStatus": "seed"
+    },
+    "recommendedDays": 2,
+    "suitableMonths": [
+      "January",
+      "February",
+      "March",
+      "July",
+      "August",
+      "December"
+    ],
+    "activities": [
+      "Temple visits",
+      "Lake walk",
+      "Botanical gardens"
+    ],
+    "nearbyDestinations": [
+      "Gampola",
+      "Matale",
+      "Nuwara Eliya"
+    ],
+    "culturalNotes": [
+      "Temple visits require covered shoulders and knees."
+    ],
+    "seasonalNotes": [
+      "July/August may coincide with Esala Perahera crowds."
+    ],
+    "travelWarnings": [
+      "Festival periods need early planning and crowd awareness."
+    ]
   },
   {
     "id": 7,
     "name": "Nuwara Eliya",
     "province": "Central Province",
-    "themes": ["nature", "culture"],
+    "themes": [
+      "nature",
+      "culture"
+    ],
     "image": "src/assets/images/Tea estates.webp",
     "galleryImages": [
       "src/assets/images/Tea estates.webp",
@@ -102,13 +345,51 @@
     ],
     "description": "A cool hill-country town surrounded by tea estates, gardens and colonial charm.",
     "longDescription": "Nuwara Eliya is known for its cool climate, rolling tea plantations and old-world hill-country atmosphere. Visitors come for scenic drives through misty estates, flower gardens, lake walks and relaxed stays that feel very different from Sri Lanka's tropical coast.",
-    "attractions": ["Tea estates", "Gregory Lake", "Horton Plains", "Victoria Park"]
+    "attractions": [
+      "Tea estates",
+      "Gregory Lake",
+      "Horton Plains",
+      "Victoria Park"
+    ],
+    "coordinates": {
+      "lat": 6.9497,
+      "lng": 80.7891,
+      "verificationStatus": "seed"
+    },
+    "recommendedDays": 2,
+    "suitableMonths": [
+      "January",
+      "February",
+      "March",
+      "April"
+    ],
+    "activities": [
+      "Tea tastings",
+      "Lake walks",
+      "Highland gardens"
+    ],
+    "nearbyDestinations": [
+      "Ella",
+      "Kandy"
+    ],
+    "culturalNotes": [
+      "Tea factory visits may require arranged time slots."
+    ],
+    "seasonalNotes": [
+      "Cool evenings are common in the highlands."
+    ],
+    "travelWarnings": [
+      "Roads can be misty and slow after rain."
+    ]
   },
   {
     "id": 8,
     "name": "Colombo",
     "province": "Western Province",
-    "themes": ["culture", "heritage"],
+    "themes": [
+      "culture",
+      "heritage"
+    ],
     "image": "src/assets/images/colombo.jpg",
     "galleryImages": [
       "src/assets/images/colombo.jpg",
@@ -117,13 +398,53 @@
     ],
     "description": "Sri Lanka's lively capital with food, markets, oceanfront walks and modern city energy.",
     "longDescription": "Colombo brings together Sri Lanka's contemporary pace and layered history. The city is a strong first or final stop for travellers, with oceanfront promenades, colonial buildings, temples, street food, galleries and shopping districts all sitting close together.",
-    "attractions": ["Galle Face Green", "Pettah Market", "Gangaramaya Temple", "Dutch Hospital"]
+    "attractions": [
+      "Galle Face Green",
+      "Pettah Market",
+      "Gangaramaya Temple",
+      "Dutch Hospital"
+    ],
+    "coordinates": {
+      "lat": 6.9271,
+      "lng": 79.8612,
+      "verificationStatus": "seed"
+    },
+    "recommendedDays": 1,
+    "suitableMonths": [
+      "January",
+      "February",
+      "March",
+      "July",
+      "August",
+      "December"
+    ],
+    "activities": [
+      "Markets",
+      "Food walks",
+      "Oceanfront walks"
+    ],
+    "nearbyDestinations": [
+      "Galle Fort",
+      "Kandy"
+    ],
+    "culturalNotes": [
+      "Urban temples and markets are active local spaces."
+    ],
+    "seasonalNotes": [
+      "Evening oceanfront walks are more comfortable after heat drops."
+    ],
+    "travelWarnings": [
+      "Plan extra time for city traffic."
+    ]
   },
   {
     "id": 9,
     "name": "Dambulla",
     "province": "Central Province",
-    "themes": ["heritage", "culture"],
+    "themes": [
+      "heritage",
+      "culture"
+    ],
     "image": "src/assets/images/dambulla cave temple.jpeg",
     "galleryImages": [
       "src/assets/images/dambulla cave temple.jpeg",
@@ -132,13 +453,55 @@
     ],
     "description": "A historic town famous for cave temples and easy access to the Cultural Triangle.",
     "longDescription": "Dambulla is best known for its remarkable cave temple complex, where Buddhist murals and statues fill a series of sacred rock chambers. It also works beautifully as a base for exploring nearby Sigiriya, ancient cities and rural landscapes.",
-    "attractions": ["Cave Temple", "Golden Temple", "Cultural Triangle", "Rock viewpoints"]
+    "attractions": [
+      "Cave Temple",
+      "Golden Temple",
+      "Cultural Triangle",
+      "Rock viewpoints"
+    ],
+    "coordinates": {
+      "lat": 7.8567,
+      "lng": 80.6492,
+      "verificationStatus": "seed"
+    },
+    "recommendedDays": 1,
+    "suitableMonths": [
+      "January",
+      "February",
+      "March",
+      "July",
+      "August",
+      "December"
+    ],
+    "activities": [
+      "Cave temples",
+      "Cultural Triangle base",
+      "Rock viewpoints"
+    ],
+    "nearbyDestinations": [
+      "Sigiriya Rock Fortress",
+      "Polonnaruwa",
+      "Matale"
+    ],
+    "culturalNotes": [
+      "Remove hats and shoes where temple rules require it."
+    ],
+    "seasonalNotes": [
+      "Midday rock surfaces can be very hot."
+    ],
+    "travelWarnings": [
+      "Temple steps can be steep."
+    ]
   },
   {
     "id": 10,
     "name": "Jaffna",
     "province": "Northern Province",
-    "themes": ["culture", "heritage", "beach"],
+    "themes": [
+      "culture",
+      "heritage",
+      "beach"
+    ],
     "image": "src/assets/images/JAFFNA.jpg",
     "galleryImages": [
       "src/assets/images/JAFFNA.jpg",
@@ -147,13 +510,52 @@
     ],
     "description": "A northern cultural hub known for temples, islands, cuisine and coastal landscapes.",
     "longDescription": "Jaffna offers a distinct northern rhythm, shaped by Tamil culture, temple traditions, quiet islands and bold regional cuisine. It rewards travellers who want to go beyond the classic routes and experience a different side of Sri Lanka's history and identity.",
-    "attractions": ["Nallur Temple", "Jaffna Fort", "Delft Island", "Casuarina Beach"]
+    "attractions": [
+      "Nallur Temple",
+      "Jaffna Fort",
+      "Delft Island",
+      "Casuarina Beach"
+    ],
+    "coordinates": {
+      "lat": 9.6615,
+      "lng": 80.0255,
+      "verificationStatus": "seed"
+    },
+    "recommendedDays": 2,
+    "suitableMonths": [
+      "January",
+      "February",
+      "March",
+      "July",
+      "August"
+    ],
+    "activities": [
+      "Temple visits",
+      "Island trips",
+      "Cuisine"
+    ],
+    "nearbyDestinations": [
+      "Wilpattu"
+    ],
+    "culturalNotes": [
+      "Tamil cultural traditions shape food, temples and local rhythms."
+    ],
+    "seasonalNotes": [
+      "Northern dry heat can feel intense in midday."
+    ],
+    "travelWarnings": [
+      "Island ferry schedules and weather should be checked locally."
+    ]
   },
   {
     "id": 11,
     "name": "Trincomalee",
     "province": "Eastern Province",
-    "themes": ["beach", "nature", "culture"],
+    "themes": [
+      "beach",
+      "nature",
+      "culture"
+    ],
     "image": "src/assets/images/trincomalee.jpg",
     "galleryImages": [
       "src/assets/images/trincomalee.jpg",
@@ -162,13 +564,52 @@
     ],
     "description": "An east-coast destination with beaches, temples, snorkelling and blue-water bays.",
     "longDescription": "Trincomalee is loved for its calm east-coast beaches, clear water and natural harbour. Travellers can mix relaxed beach days with temple visits, snorkelling trips, whale watching seasons and boat rides to nearby marine areas.",
-    "attractions": ["Nilaveli Beach", "Pigeon Island", "Koneswaram Temple", "Fort Frederick"]
+    "attractions": [
+      "Nilaveli Beach",
+      "Pigeon Island",
+      "Koneswaram Temple",
+      "Fort Frederick"
+    ],
+    "coordinates": {
+      "lat": 8.5874,
+      "lng": 81.2152,
+      "verificationStatus": "seed"
+    },
+    "recommendedDays": 2,
+    "suitableMonths": [
+      "May",
+      "June",
+      "July",
+      "August",
+      "September"
+    ],
+    "activities": [
+      "Beach time",
+      "Snorkelling",
+      "Temple visits"
+    ],
+    "nearbyDestinations": [
+      "Polonnaruwa",
+      "Arugam Bay"
+    ],
+    "culturalNotes": [
+      "Koneswaram Temple is an active sacred site."
+    ],
+    "seasonalNotes": [
+      "East-coast beach months differ from the south coast."
+    ],
+    "travelWarnings": [
+      "Check marine park and sea-condition guidance."
+    ]
   },
   {
     "id": 12,
     "name": "Polonnaruwa",
     "province": "North Central Province",
-    "themes": ["heritage", "culture"],
+    "themes": [
+      "heritage",
+      "culture"
+    ],
     "image": "src/assets/images/Polonnaruwa.jpg",
     "galleryImages": [
       "src/assets/images/Polonnaruwa.jpg",
@@ -177,13 +618,54 @@
     ],
     "description": "An ancient royal city filled with ruins, temples, reservoirs and stone sculpture.",
     "longDescription": "Polonnaruwa is one of Sri Lanka's great ancient capitals, with archaeological sites spread across a peaceful landscape of reservoirs and forest edges. Cycling between palaces, temples and carved stone monuments is one of the most rewarding ways to explore it.",
-    "attractions": ["Gal Vihara", "Royal Palace", "Parakrama Samudra", "Vatadage"]
+    "attractions": [
+      "Gal Vihara",
+      "Royal Palace",
+      "Parakrama Samudra",
+      "Vatadage"
+    ],
+    "coordinates": {
+      "lat": 7.9403,
+      "lng": 81.0188,
+      "verificationStatus": "seed"
+    },
+    "recommendedDays": 1,
+    "suitableMonths": [
+      "January",
+      "February",
+      "March",
+      "July",
+      "August"
+    ],
+    "activities": [
+      "Ancient city cycling",
+      "Temple ruins",
+      "Reservoir views"
+    ],
+    "nearbyDestinations": [
+      "Sigiriya Rock Fortress",
+      "Dambulla",
+      "Trincomalee"
+    ],
+    "culturalNotes": [
+      "Sacred ruins require respectful dress and conduct."
+    ],
+    "seasonalNotes": [
+      "Cycling is best early morning or late afternoon."
+    ],
+    "travelWarnings": [
+      "Carry water in exposed archaeological areas."
+    ]
   },
   {
     "id": 13,
     "name": "Matale",
     "province": "Central Province",
-    "themes": ["nature", "culture", "adventure"],
+    "themes": [
+      "nature",
+      "culture",
+      "adventure"
+    ],
     "image": "src/assets/images/Matale spice garden.jpg",
     "galleryImages": [
       "src/assets/images/Matale spice garden.jpg",
@@ -192,13 +674,55 @@
     ],
     "description": "A central highland district known for spice gardens, temples and mountain scenery.",
     "longDescription": "Matale sits between Kandy and the northern plains, offering spice gardens, temples, forested hills and access to scenic central landscapes. It is a useful stop for travellers interested in food culture, rural routes and quieter hill-country experiences.",
-    "attractions": ["Spice gardens", "Aluvihare Temple", "Riverston", "Knuckles Range"]
+    "attractions": [
+      "Spice gardens",
+      "Aluvihare Temple",
+      "Riverston",
+      "Knuckles Range"
+    ],
+    "coordinates": {
+      "lat": 7.4675,
+      "lng": 80.6234,
+      "verificationStatus": "seed"
+    },
+    "recommendedDays": 1,
+    "suitableMonths": [
+      "January",
+      "February",
+      "March",
+      "July",
+      "August"
+    ],
+    "activities": [
+      "Spice gardens",
+      "Temple visits",
+      "Mountain scenery"
+    ],
+    "nearbyDestinations": [
+      "Kandy",
+      "Dambulla",
+      "Gampola"
+    ],
+    "culturalNotes": [
+      "Ask before photographing people in rural and temple settings."
+    ],
+    "seasonalNotes": [
+      "Mountain roads can be slower in rain."
+    ],
+    "travelWarnings": [
+      "Verify trail access for Knuckles/Riverston routes."
+    ]
   },
   {
     "id": 14,
     "name": "Arugam Bay",
     "province": "Eastern Province",
-    "themes": ["beach", "adventure", "nature", "wildlife"],
+    "themes": [
+      "beach",
+      "adventure",
+      "nature",
+      "wildlife"
+    ],
     "image": "src/assets/images/Arugam Bay.webp",
     "galleryImages": [
       "src/assets/images/Arugam Bay.webp",
@@ -207,13 +731,52 @@
     ],
     "description": "A relaxed east-coast surf town with beaches, lagoons and nearby wildlife areas.",
     "longDescription": "Arugam Bay is Sri Lanka's best-known surf destination, but it also has an easy beach-town mood, lagoon trips and nearby wildlife routes. Travellers come for waves, sunrise coastlines, casual cafes and access to the wilder eastern side of the island.",
-    "attractions": ["Main Point surf", "Peanut Farm", "Lagoon safari", "Kumana National Park"]
+    "attractions": [
+      "Main Point surf",
+      "Peanut Farm",
+      "Lagoon safari",
+      "Kumana National Park"
+    ],
+    "coordinates": {
+      "lat": 6.8404,
+      "lng": 81.8368,
+      "verificationStatus": "seed"
+    },
+    "recommendedDays": 2,
+    "suitableMonths": [
+      "May",
+      "June",
+      "July",
+      "August",
+      "September"
+    ],
+    "activities": [
+      "Surfing",
+      "Lagoon safari",
+      "Kumana day trip"
+    ],
+    "nearbyDestinations": [
+      "Yala National Park",
+      "Trincomalee"
+    ],
+    "culturalNotes": [
+      "Respect local village spaces beyond the beach strip."
+    ],
+    "seasonalNotes": [
+      "Surf season usually centres on the dry east-coast months."
+    ],
+    "travelWarnings": [
+      "Sea conditions vary by break and season."
+    ]
   },
   {
     "id": 15,
     "name": "Weligama",
     "province": "Southern Province",
-    "themes": ["beach", "adventure"],
+    "themes": [
+      "beach",
+      "adventure"
+    ],
     "image": "src/assets/images/Weligama.jpg",
     "galleryImages": [
       "src/assets/images/Weligama.jpg",
@@ -222,13 +785,52 @@
     ],
     "description": "A southern surf bay known for beginner-friendly waves, beach stays and coastal cafes.",
     "longDescription": "Weligama is a mellow southern-coast base with a wide bay, surf schools and easy access to neighbouring beaches. It is especially popular with beginner surfers, digital nomads and travellers who want a relaxed beach rhythm with plenty of cafes and short day trips.",
-    "attractions": ["Beginner surf", "Weligama Bay", "Taprobane Island", "Coastal cafes"]
+    "attractions": [
+      "Beginner surf",
+      "Weligama Bay",
+      "Taprobane Island",
+      "Coastal cafes"
+    ],
+    "coordinates": {
+      "lat": 5.975,
+      "lng": 80.4297,
+      "verificationStatus": "seed"
+    },
+    "recommendedDays": 2,
+    "suitableMonths": [
+      "January",
+      "February",
+      "March",
+      "December"
+    ],
+    "activities": [
+      "Beginner surfing",
+      "Bay walks",
+      "Coastal cafes"
+    ],
+    "nearbyDestinations": [
+      "Mirissa",
+      "Galle Fort"
+    ],
+    "culturalNotes": [
+      "Beach towns are shared by residents, surfers and fishing communities."
+    ],
+    "seasonalNotes": [
+      "South-coast surf and swimming conditions vary by monsoon."
+    ],
+    "travelWarnings": [
+      "Use flagged or locally advised swimming areas."
+    ]
   },
   {
     "id": 16,
     "name": "Gampola",
     "province": "Central Province",
-    "themes": ["nature", "culture", "adventure"],
+    "themes": [
+      "nature",
+      "culture",
+      "adventure"
+    ],
     "image": "src/assets/images/ambuluvava.jpg",
     "galleryImages": [
       "src/assets/images/ambuluvava.jpg",
@@ -237,13 +839,52 @@
     ],
     "description": "A Central Province town best known as the gateway to Ambuluwawa Tower.",
     "longDescription": "Gampola is the closest major town for visiting Ambuluwawa Tower, a hilltop biodiversity and multi-religious complex known for its spiral tower and sweeping views across the central highlands. It works well as a short adventure stop between Kandy, Peradeniya and Sri Lanka's tea-country routes.",
-    "attractions": ["Ambuluwawa Tower", "Ambuluwawa Biodiversity Complex", "Hill-country views", "Multi-religious centre"]
+    "attractions": [
+      "Ambuluwawa Tower",
+      "Ambuluwawa Biodiversity Complex",
+      "Hill-country views",
+      "Multi-religious centre"
+    ],
+    "coordinates": {
+      "lat": 7.1643,
+      "lng": 80.5767,
+      "verificationStatus": "seed"
+    },
+    "recommendedDays": 1,
+    "suitableMonths": [
+      "January",
+      "February",
+      "March",
+      "July",
+      "August"
+    ],
+    "activities": [
+      "Ambuluwawa Tower",
+      "Viewpoints",
+      "Short hikes"
+    ],
+    "nearbyDestinations": [
+      "Kandy",
+      "Nuwara Eliya"
+    ],
+    "culturalNotes": [
+      "Ambuluwawa includes multi-religious spaces; behave respectfully."
+    ],
+    "seasonalNotes": [
+      "Views are clearest when mist and rain are lighter."
+    ],
+    "travelWarnings": [
+      "The spiral tower can feel exposed and windy."
+    ]
   },
   {
     "id": 17,
     "name": "Udawalawe",
     "province": "Sabaragamuwa Province",
-    "themes": ["wildlife", "nature"],
+    "themes": [
+      "wildlife",
+      "nature"
+    ],
     "image": "src/assets/images/Udawalawe.jpeg",
     "galleryImages": [
       "src/assets/images/Udawalawe.jpeg",
@@ -252,13 +893,53 @@
     ],
     "description": "A wildlife destination famous for elephants, open grasslands and reservoir views.",
     "longDescription": "Udawalawe is one of Sri Lanka's best places to see elephants in open landscapes. The national park surrounds the Udawalawe Reservoir, creating a mix of grassland, scrub forest and water edges where safaris often reveal elephants, buffalo, deer, crocodiles and rich birdlife.",
-    "attractions": ["Udawalawe National Park", "Elephant Transit Home", "Udawalawe Reservoir", "Safari drives"]
+    "attractions": [
+      "Udawalawe National Park",
+      "Elephant Transit Home",
+      "Udawalawe Reservoir",
+      "Safari drives"
+    ],
+    "coordinates": {
+      "lat": 6.4204,
+      "lng": 80.8894,
+      "verificationStatus": "seed"
+    },
+    "recommendedDays": 2,
+    "suitableMonths": [
+      "February",
+      "March",
+      "June",
+      "July",
+      "August",
+      "September"
+    ],
+    "activities": [
+      "Elephant safaris",
+      "Reservoir views",
+      "Birdwatching"
+    ],
+    "nearbyDestinations": [
+      "Yala National Park",
+      "Ella"
+    ],
+    "culturalNotes": [
+      "Responsible safari conduct protects both visitors and wildlife."
+    ],
+    "seasonalNotes": [
+      "Dry periods may concentrate animals near water."
+    ],
+    "travelWarnings": [
+      "Confirm park opening times and ethical operators locally."
+    ]
   },
   {
     "id": 18,
     "name": "Wilpattu",
     "province": "North Western Province",
-    "themes": ["wildlife", "nature"],
+    "themes": [
+      "wildlife",
+      "nature"
+    ],
     "image": "src/assets/images/Wilpattu leopard.jpeg",
     "galleryImages": [
       "src/assets/images/Wilpattu leopard.jpeg",
@@ -267,6 +948,43 @@
     ],
     "description": "A vast national park known for natural lakes, leopards and quieter safari routes.",
     "longDescription": "Wilpattu is Sri Lanka's largest national park and is known for its villus, or natural rain-fed lakes, scattered through dry-zone forest. It offers a quieter safari experience, with chances to see leopards, sloth bears, deer, crocodiles and many species of birds.",
-    "attractions": ["Wilpattu National Park", "Natural villus", "Leopard tracking", "Birdwatching"]
+    "attractions": [
+      "Wilpattu National Park",
+      "Natural villus",
+      "Leopard tracking",
+      "Birdwatching"
+    ],
+    "coordinates": {
+      "lat": 8.3698,
+      "lng": 80.1039,
+      "verificationStatus": "seed"
+    },
+    "recommendedDays": 2,
+    "suitableMonths": [
+      "February",
+      "March",
+      "June",
+      "July",
+      "August",
+      "September"
+    ],
+    "activities": [
+      "Safari drives",
+      "Villu wetlands",
+      "Wildlife photography"
+    ],
+    "nearbyDestinations": [
+      "Jaffna",
+      "Anuradhapura"
+    ],
+    "culturalNotes": [
+      "The park is quieter and more remote than many classic routes."
+    ],
+    "seasonalNotes": [
+      "Road access and sightings vary with rain and villu water levels."
+    ],
+    "travelWarnings": [
+      "Remote park logistics should be verified before travel."
+    ]
   }
 ]

@@ -20,12 +20,9 @@
 
 **Live website:** [Sri Lanka Travel Explorer](https://sri-lanka-tourism-blond.vercel.app/)
 
-**Website demo:** 
+**Website demo:**
 
 https://github.com/user-attachments/assets/6888101e-271c-450d-8e24-428ed0b16b02
-
-
-
 
 **Power BI demo:**
 
@@ -108,7 +105,7 @@ The Power BI component examines tourist arrivals to Sri Lanka across 2024, 2025 
 
 <img width="949" height="468" alt="power BI 0" src="https://github.com/user-attachments/assets/501b87e0-d0de-4642-a02c-d971b829c6f5" />
 
-> The screenshot shows the analysis-ready structure produced in Power Query. 
+> The screenshot shows the analysis-ready structure produced in Power Query.
 
 > Public Power BI embedding is unavailable because the organisation-managed Power BI tenant disables Publish to web. The dashboard workflow is therefore presented through the demo above.
 

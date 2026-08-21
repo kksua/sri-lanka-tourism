@@ -16,4 +16,17 @@ export interface Destination {
   description: string;
   longDescription: string;
   attractions: string[];
+  coordinates?: {
+    lat: number;
+    lng: number;
+    verificationStatus?: "seed" | "verified";
+  };
+  googlePlaceId?: string;
+  recommendedDays?: number;
+  suitableMonths?: string[];
+  activities?: string[];
+  nearbyDestinations?: string[];
+  culturalNotes?: string[];
+  seasonalNotes?: string[];
+  travelWarnings?: string[];
 }

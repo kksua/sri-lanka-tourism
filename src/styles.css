@@ -741,6 +741,773 @@ main {
   text-align: left;
 }
 
+.planner-section {
+  padding: 92px clamp(20px, 6vw, 84px) 118px;
+  color: #17201d;
+  background: #f7f3ea;
+}
+
+.planner-card {
+  width: min(1180px, 100%);
+  margin: 0 auto;
+  position: relative;
+  display: grid;
+  justify-items: center;
+  gap: 26px;
+  text-align: center;
+}
+
+.planner-copy {
+  display: grid;
+  justify-items: center;
+  gap: 12px;
+  max-width: 720px;
+}
+
+.planner-panel-heading > span,
+.itinerary-view header > span {
+  color: #4d6a43;
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.planner-card h2 {
+  margin: 0;
+  font-size: clamp(2.2rem, 5vw, 4.7rem);
+  line-height: 0.95;
+}
+
+.planner-panel-heading h2 {
+  margin: 0;
+  font-size: clamp(1.9rem, 3.4vw, 3.35rem);
+  line-height: 1;
+}
+
+.planner-card p,
+.planner-panel-heading p {
+  max-width: 720px;
+  margin: 0;
+  color: rgb(23 32 29 / 0.68);
+  font-size: clamp(1rem, 2vw, 1.18rem);
+  line-height: 1.65;
+}
+
+.planner-visual {
+  width: 100%;
+  height: clamp(280px, 42vw, 500px);
+  position: relative;
+  margin: 8px 0 0;
+  overflow: hidden;
+  border-radius: 28px;
+  background: #17201d;
+  box-shadow: 0 28px 90px rgb(23 32 29 / 0.18);
+}
+
+.planner-visual img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.planner-visual::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgb(7 18 15 / 0.04), rgb(7 18 15 / 0.28)),
+    linear-gradient(90deg, rgb(7 18 15 / 0.2), transparent 34%, rgb(7 18 15 / 0.18));
+  pointer-events: none;
+}
+
+.planner-search-card {
+  width: min(960px, calc(100% - 64px));
+  min-height: 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) auto;
+  column-gap: 22px;
+  row-gap: 0;
+  align-items: center;
+  align-content: start;
+  margin-top: -76px;
+  position: relative;
+  z-index: 1;
+  padding: 22px 28px;
+  border: 1px solid rgb(23 32 29 / 0.08);
+  border-radius: 20px;
+  background: rgb(255 255 255 / 0.93);
+  box-shadow: 0 24px 80px rgb(23 32 29 / 0.16);
+  backdrop-filter: blur(14px);
+}
+
+.planner-search-item {
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  text-align: left;
+  color: #17201d;
+}
+
+.planner-search-item > svg {
+  flex: 0 0 auto;
+  color: #4d6a43;
+}
+
+.planner-search-item span {
+  min-width: 0;
+  display: grid;
+  gap: 4px;
+  color: #17201d;
+  font-weight: 900;
+  line-height: 1.1;
+}
+
+.planner-search-item small {
+  color: rgb(23 32 29 / 0.48);
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.planner-search-action {
+  min-height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+  gap: 8px;
+  padding: 0 24px;
+  margin-bottom: 25px;
+  border: 1px solid #223c35;
+  border-radius: 999px;
+  color: #fff;
+  background: #223c35;
+  cursor: pointer;
+  font-weight: 900;
+  box-shadow: 0 14px 32px rgb(34 60 53 / 0.22);
+  transition:
+    transform 0.22s ease,
+    background 0.22s ease;
+}
+
+.planner-search-action:hover {
+  background: #17201d;
+  transform: translateY(-2px);
+}
+
+.planner-submit {
+  min-height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 0 22px;
+  border: 1px solid #d8f08f;
+  border-radius: 999px;
+  color: #17201d;
+  background: #d8f08f;
+  cursor: pointer;
+  font-weight: 900;
+  transition:
+    transform 0.22s ease,
+    box-shadow 0.22s ease;
+}
+
+.planner-submit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 38px rgb(216 240 143 / 0.18);
+}
+
+.planner-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 90;
+  display: grid;
+  place-items: center;
+  padding: 22px;
+}
+
+.planner-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgb(7 18 15 / 0.18);
+  backdrop-filter: blur(16px);
+}
+
+.planner-panel {
+  position: relative;
+  z-index: 1;
+  width: min(1380px, 100%);
+  height: min(880px, calc(100vh - 44px));
+  max-height: calc(100vh - 44px);
+  overflow: auto;
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+  gap: 20px;
+  padding: clamp(24px, 4vw, 54px);
+  border: 1px solid rgb(255 255 255 / 0.16);
+  border-radius: 8px;
+  color: #fff;
+  background: #17201d;
+  box-shadow: 0 40px 140px rgb(0 0 0 / 0.48);
+  isolation: isolate;
+}
+
+.planner-panel::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    linear-gradient(180deg, rgb(7 18 15 / 0.62), rgb(7 18 15 / 0.72)),
+    radial-gradient(circle at 24% 12%, rgb(216 240 143 / 0.12), transparent 30%);
+  pointer-events: none;
+}
+
+.planner-panel-background {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  overflow: hidden;
+  border-radius: inherit;
+  background: #17201d;
+}
+
+.planner-panel-slide {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+}
+
+.planner-close {
+  position: sticky;
+  top: 0;
+  justify-self: end;
+  z-index: 2;
+  width: 46px;
+  height: 46px;
+  display: inline-grid;
+  place-items: center;
+  margin-bottom: -54px;
+  border: 1px solid rgb(255 255 255 / 0.36);
+  border-radius: 50%;
+  color: #fff;
+  background: rgb(255 255 255 / 0.1);
+  cursor: pointer;
+  backdrop-filter: blur(14px);
+}
+
+.planner-panel-heading {
+  width: min(760px, 100%);
+  justify-self: center;
+  display: grid;
+  justify-items: center;
+  margin-bottom: 10px;
+  gap: 0;
+  text-align: center;
+}
+
+.planner-panel-grid {
+  min-height: 0;
+  display: grid;
+  grid-template-columns: minmax(330px, 0.78fr) minmax(420px, 1.22fr);
+  gap: clamp(24px, 4vw, 48px);
+  align-items: stretch;
+}
+
+.planner-panel-grid > * {
+  min-height: 0;
+}
+
+.planner-form,
+.planner-result,
+.planner-empty,
+.planner-chat,
+.itinerary-day,
+.itinerary-warnings,
+.planner-error {
+  border: 1px solid rgb(255 255 255 / 0.13);
+  border-radius: 8px;
+  background: rgb(255 255 255 / 0.055);
+}
+
+.planner-form {
+  display: grid;
+  gap: 20px;
+  padding: 20px;
+}
+
+.planner-form-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.planner-form-grid:last-of-type {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.planner-required-destinations {
+  display: grid;
+  gap: 12px;
+}
+
+.destination-select-row {
+  display: grid;
+  grid-template-columns: 1fr 44px;
+  gap: 10px;
+  align-items: start;
+}
+
+.planner-choice-menu {
+  position: relative;
+  min-width: 0;
+}
+
+.planner-choice-trigger {
+  width: 100%;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 0 13px;
+  border: 1px solid rgb(216 240 143 / 0.5);
+  border-radius: 8px;
+  color: #fff;
+  background: #0f1b18;
+  cursor: pointer;
+  text-align: left;
+}
+
+.planner-choice-trigger svg {
+  flex: 0 0 auto;
+  color: #d8f08f;
+}
+
+.planner-choice-list {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  z-index: 5;
+  width: min(100%, 520px);
+  max-height: 260px;
+  overflow-y: auto;
+  display: grid;
+  gap: 4px;
+  padding: 8px;
+  border: 1px solid rgb(216 240 143 / 0.24);
+  border-radius: 8px;
+  color: #f7f3ea;
+  background: rgb(15 27 24 / 0.96);
+  box-shadow: 0 24px 70px rgb(0 0 0 / 0.38);
+  backdrop-filter: blur(18px);
+}
+
+.planner-choice-list button {
+  width: 100%;
+  min-height: 40px;
+  padding: 0 12px;
+  border: 0;
+  border-radius: 6px;
+  color: rgb(247 243 234 / 0.82);
+  background: transparent;
+  cursor: pointer;
+  text-align: left;
+  font-weight: 800;
+}
+
+.planner-choice-list button:hover,
+.planner-choice-list button.active {
+  color: #17201d;
+  background: #d8f08f;
+}
+
+.destination-add-button {
+  width: 44px;
+  height: 44px;
+  display: inline-grid;
+  place-items: center;
+  border: 1px solid #d8f08f;
+  border-radius: 8px;
+  color: #17201d;
+  background: #d8f08f;
+  cursor: pointer;
+}
+
+.destination-add-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.48;
+}
+
+.selected-destinations {
+  max-height: 78px;
+  overflow-y: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  padding-right: 4px;
+}
+
+.selected-destinations > span {
+  min-height: 34px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 8px 0 12px;
+  border: 1px solid rgb(216 240 143 / 0.42);
+  border-radius: 999px;
+  color: #f7f3ea;
+  background: rgb(216 240 143 / 0.1);
+  font-size: 0.88rem;
+  font-weight: 800;
+}
+
+.selected-destinations button {
+  width: 24px;
+  height: 24px;
+  display: inline-grid;
+  place-items: center;
+  padding: 0;
+  border: 1px solid rgb(255 255 255 / 0.16);
+  border-radius: 50%;
+  color: #fff;
+  background: rgb(255 255 255 / 0.08);
+  cursor: pointer;
+}
+
+.planner-form label,
+.planner-chat-form label {
+  display: grid;
+  gap: 8px;
+  min-width: 0;
+}
+
+.planner-form label > span,
+.planner-chat-form label > span,
+.planner-form legend {
+  color: #d8f08f;
+  font-size: 0.76rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.planner-form input,
+.planner-form select,
+.planner-chat-form input {
+  width: 100%;
+  min-height: 44px;
+  padding: 0 13px;
+  border: 1px solid rgb(255 255 255 / 0.18);
+  border-radius: 8px;
+  color: #fff;
+  background: #0f1b18;
+  outline: none;
+}
+
+.planner-form select option {
+  color: #17201d;
+}
+
+.planner-form input:focus-visible,
+.planner-form select:focus-visible,
+.planner-chat-form input:focus-visible,
+.planner-close:focus-visible,
+.planner-card button:focus-visible,
+.planner-form button:focus-visible,
+.planner-chat button:focus-visible {
+  outline: 3px solid #d8f08f;
+  outline-offset: 3px;
+}
+
+.planner-form small {
+  color: #ffd1c2;
+}
+
+.planner-form fieldset {
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.planner-pill-row,
+.planner-segmented {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.planner-pill-row button,
+.planner-segmented button,
+.planner-suggestions button {
+  min-height: 38px;
+  padding: 0 14px;
+  border: 1px solid rgb(255 255 255 / 0.22);
+  border-radius: 999px;
+  color: #f7f3ea;
+  background: transparent;
+  cursor: pointer;
+  font-weight: 800;
+  text-transform: capitalize;
+}
+
+.planner-pill-row button.active,
+.planner-segmented button.active {
+  color: #17201d;
+  background: #d8f08f;
+  border-color: #d8f08f;
+}
+
+.planner-submit {
+  width: 100%;
+}
+
+.planner-submit:disabled,
+.planner-chat button:disabled {
+  cursor: progress;
+  opacity: 0.68;
+}
+
+.planner-error {
+  display: grid;
+  gap: 10px;
+  margin-top: 16px;
+  padding: 16px;
+}
+
+.planner-error p {
+  margin: 0;
+  color: #ffd1c2;
+}
+
+.planner-error button {
+  width: max-content;
+  min-height: 36px;
+  padding: 0 13px;
+  border: 1px solid rgb(255 255 255 / 0.26);
+  border-radius: 999px;
+  color: #fff;
+  background: transparent;
+  cursor: pointer;
+}
+
+.planner-result {
+  min-width: 0;
+  min-height: 0;
+  max-height: 100%;
+  align-self: stretch;
+  overflow-y: auto;
+  display: grid;
+  align-content: start;
+  padding: clamp(18px, 3vw, 28px);
+}
+
+.planner-empty {
+  height: 100%;
+  min-height: 500px;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  gap: 12px;
+  padding: 28px;
+  text-align: center;
+}
+
+.planner-empty span {
+  color: #d8f08f;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.planner-empty p {
+  max-width: 480px;
+  margin: 0;
+  color: rgb(255 255 255 / 0.7);
+  line-height: 1.65;
+}
+
+.itinerary-view {
+  display: grid;
+  gap: 18px;
+}
+
+.itinerary-view header h3 {
+  margin: 0 0 10px;
+  font-size: clamp(1.25rem, 2.2vw, 2rem);
+  line-height: 1;
+}
+
+.itinerary-view header p,
+.planning-note,
+.route-note {
+  margin: 0;
+  color: rgb(255 255 255 / 0.74);
+  line-height: 1.65;
+  text-align: justify;
+}
+
+.planning-note {
+  padding: 13px 15px;
+  border: 1px solid rgb(216 240 143 / 0.32);
+  border-radius: 8px;
+  color: #f7f3ea;
+  background: rgb(216 240 143 / 0.08);
+  font-weight: 700;
+}
+
+.itinerary-sequence {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.itinerary-sequence span {
+  padding: 8px 12px;
+  border: 1px solid rgb(216 240 143 / 0.4);
+  border-radius: 999px;
+  color: #f7f3ea;
+  background: rgb(216 240 143 / 0.08);
+  font-weight: 800;
+}
+
+.itinerary-days {
+  display: grid;
+  gap: 14px;
+}
+
+.itinerary-day {
+  display: grid;
+  gap: 12px;
+  padding: 18px;
+}
+
+.itinerary-day span,
+.itinerary-warnings span {
+  color: #d8f08f;
+  font-size: 0.75rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.itinerary-day h4 {
+  margin: 4px 0 0;
+  font-size: 1.35rem;
+}
+
+.transfer-label {
+  margin: 0;
+  color: #f7f3ea;
+  font-weight: 800;
+}
+
+.itinerary-day dl {
+  display: grid;
+  grid-template-columns: 94px 1fr;
+  gap: 8px 12px;
+  margin: 0;
+}
+
+.itinerary-day dt {
+  color: rgb(216 240 143 / 0.86);
+  font-weight: 900;
+}
+
+.itinerary-day dd,
+.day-note,
+.itinerary-warnings p {
+  margin: 0;
+  color: rgb(255 255 255 / 0.72);
+  line-height: 1.58;
+}
+
+.day-note {
+  padding-top: 10px;
+  border-top: 1px solid rgb(255 255 255 / 0.1);
+}
+
+.itinerary-warnings {
+  display: grid;
+  gap: 8px;
+  padding: 16px;
+}
+
+.planner-chat {
+  display: grid;
+  gap: 14px;
+  margin-top: 18px;
+  padding: 16px;
+}
+
+.planner-chat-log {
+  display: grid;
+  gap: 10px;
+}
+
+.planner-chat-log p {
+  width: fit-content;
+  max-width: min(620px, 100%);
+  margin: 0;
+  padding: 10px 13px;
+  border-radius: 8px;
+  color: #f7f3ea;
+  background: rgb(255 255 255 / 0.08);
+  line-height: 1.5;
+}
+
+.planner-chat-log p.user {
+  justify-self: end;
+  background: rgb(216 240 143 / 0.16);
+}
+
+.planner-suggestions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.planner-suggestions button {
+  min-height: 34px;
+  font-size: 0.86rem;
+  text-transform: none;
+}
+
+.planner-chat-form {
+  display: grid;
+  grid-template-columns: 1fr 46px;
+  gap: 10px;
+  align-items: end;
+}
+
+.planner-chat-form button {
+  width: 46px;
+  height: 46px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 1px solid #d8f08f;
+  border-radius: 50%;
+  color: #17201d;
+  background: #d8f08f;
+  cursor: pointer;
+}
+
+.planner-chat-form button span {
+  display: none;
+}
+
 .tourism-insights {
   padding: 96px clamp(22px, 6vw, 84px) 112px;
   color: #17201d;
@@ -947,6 +1714,96 @@ main {
     height: 220px;
   }
 
+  .planner-section {
+    padding: 70px 16px 84px;
+  }
+
+  .planner-card {
+    gap: 20px;
+  }
+
+  .planner-visual {
+    height: 310px;
+    border-radius: 18px;
+  }
+
+  .planner-search-card {
+    width: calc(100% - 22px);
+    min-height: 0;
+    grid-template-columns: 1fr;
+    grid-template-rows: none;
+    row-gap: 16px;
+    column-gap: 0;
+    margin-top: -54px;
+    padding: 16px 18px;
+    border-radius: 16px;
+  }
+
+  .planner-search-item {
+    justify-content: flex-start;
+    min-height: 42px;
+  }
+
+  .planner-search-item:nth-child(2),
+  .planner-search-item:nth-child(3),
+  .planner-search-action {
+    grid-column: 1 / -1;
+  }
+
+  .planner-modal {
+    padding: 12px;
+    place-items: stretch;
+  }
+
+  .planner-panel {
+    height: calc(100vh - 24px);
+    max-height: calc(100vh - 24px);
+    padding: 20px;
+  }
+
+  .planner-close {
+    margin-bottom: -42px;
+  }
+
+  .planner-panel-grid,
+  .planner-form-grid,
+  .planner-form-grid:last-of-type {
+    grid-template-columns: 1fr;
+  }
+
+  .planner-pill-row {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 8px;
+  }
+
+  .planner-pill-row button {
+    flex: 0 0 auto;
+  }
+
+  .planner-result {
+    min-height: 0;
+    max-height: 420px;
+  }
+
+  .itinerary-day dl {
+    grid-template-columns: 1fr;
+  }
+
+  .planner-chat-form {
+    grid-template-columns: 1fr;
+  }
+
+  .planner-chat-form button {
+    width: 100%;
+    border-radius: 999px;
+  }
+
+  .planner-chat-form button span {
+    display: inline;
+    font-weight: 900;
+  }
+
   .tourism-insights {
     padding-top: 72px;
     padding-bottom: 84px;
@@ -1045,5 +1902,16 @@ main {
   .footer-brand p,
   .footer-note p {
     margin-inline: auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
   }
 }

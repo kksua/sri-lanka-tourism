@@ -15,3 +15,7 @@ Thumbs.db
 
 .vite/
 coverage/
+*.tsbuildinfo
+backend/build/
+
+*.egg-info/

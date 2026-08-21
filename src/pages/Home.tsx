@@ -7,6 +7,7 @@ import ExperienceSection from "../components/ExperienceSection";
 import Hero from "../components/Hero";
 import PowerBISection from "../components/PowerBISection";
 import ThemeFilter from "../components/ThemeFilter";
+import PlannerSection from "../components/planner/PlannerSection";
 import destinationsData from "../data/destinations.json";
 import type { Destination, DestinationTheme } from "../types/destination";
 
@@ -309,6 +310,7 @@ export default function Home() {
           </div>
         </section>
 
+        <PlannerSection destinations={destinations} themes={themes} />
         <ExperienceSection />
         <PowerBISection />
       </main>
@@ -432,6 +434,7 @@ export default function Home() {
           <span>Quick Links</span>
           <a href="#quote">Inspiration</a>
           <a href="#destinations">Destinations</a>
+          <a href="#planner">Planner</a>
           <a href="#experiences">Experiences</a>
           <a href="#analytics">Travel Pulse</a>
         </nav>

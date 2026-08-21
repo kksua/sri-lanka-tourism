@@ -1,0 +1,41 @@
+[
+  {
+    "name": "balanced cultural week",
+    "input": {
+      "days": 7,
+      "month": "August",
+      "startingLocation": "Colombo",
+      "preferredThemes": ["culture", "heritage"],
+      "pace": "balanced",
+      "requiredDestinations": ["Kandy"],
+      "excludedDestinations": []
+    },
+    "checks": ["includes_required", "matches_day_count", "no_budget_fields"]
+  },
+  {
+    "name": "southern beaches",
+    "input": {
+      "days": 5,
+      "month": "January",
+      "startingLocation": "Colombo",
+      "preferredThemes": ["beach", "nature"],
+      "pace": "relaxed",
+      "requiredDestinations": ["Mirissa"],
+      "excludedDestinations": ["Jaffna"]
+    },
+    "checks": ["excludes_destinations", "matches_day_count"]
+  },
+  {
+    "name": "wildlife loop",
+    "input": {
+      "days": 6,
+      "month": "July",
+      "startingLocation": "Colombo",
+      "preferredThemes": ["wildlife", "nature"],
+      "pace": "packed",
+      "requiredDestinations": ["Yala National Park", "Udawalawe"],
+      "excludedDestinations": []
+    },
+    "checks": ["includes_required", "route_note_present"]
+  }
+]

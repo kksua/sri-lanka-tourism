@@ -118,6 +118,9 @@ export default function Hero() {
         <a className="menu-link" href="#destinations" onClick={toggleMenu}>
           Destinations
         </a>
+        <a className="menu-link" href="#planner" onClick={toggleMenu}>
+          Planner
+        </a>
         <a className="menu-link" href="#experiences" onClick={toggleMenu}>
           Experiences
         </a>

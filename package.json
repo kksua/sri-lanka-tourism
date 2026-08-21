@@ -1,8 +1,11 @@
 {
+  "type": "module",
   "scripts": {
     "dev": "vite --host 0.0.0.0",
     "build": "tsc -b && vite build",
-    "preview": "vite preview --host 0.0.0.0"
+    "preview": "vite preview --host 0.0.0.0",
+    "backend:dev": "cd backend && uvicorn app.main:app --reload --host 0.0.0.0 --port 8000",
+    "test": "vitest run --config vitest.config.ts"
   },
   "dependencies": {
     "@vitejs/plugin-react": "^5.0.0",
@@ -14,7 +17,11 @@
     "vite": "^6.0.1"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.1.0",
     "@types/react": "^19.2.18",
-    "@types/react-dom": "^19.2.4"
+    "@types/react-dom": "^19.2.4",
+    "jsdom": "^25.0.1",
+    "vitest": "^2.1.8"
   }
 }

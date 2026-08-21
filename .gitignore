@@ -1,21 +1,31 @@
+# Frontend dependencies and builds
 node_modules/
 dist/
+.vite/
+coverage/
+*.tsbuildinfo
 
+# Environment variables
 .env
 .env.*
 !.env.example
 
+# Logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
+# Python
+backend/.venv/
+backend/build/
+*.egg-info/
+**/__pycache__/
+.pytest_cache/
+.ruff_cache/
+**/.pytest_cache/
+**/.ruff_cache/
+
+# Operating system
 .DS_Store
 Thumbs.db
-
-.vite/
-coverage/
-*.tsbuildinfo
-backend/build/
-
-*.egg-info/

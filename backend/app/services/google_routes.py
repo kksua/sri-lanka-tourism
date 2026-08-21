@@ -62,7 +62,9 @@ class GoogleRoutesClient:
             "units": "METRIC",
         }
 
-        async with httpx.AsyncClient(timeout=self.settings.google_maps_timeout_seconds) as client:
+        async with httpx.AsyncClient(
+            timeout=self.settings.google_maps_timeout_seconds
+        ) as client:
             response = await client.post(url, headers=headers, json=payload)
             response.raise_for_status()
             body = response.json()

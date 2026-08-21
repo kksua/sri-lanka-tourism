@@ -16,21 +16,31 @@ from app.services.google_geocoding import GoogleGeocodingClient
 async def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--apply", action="store_true", help="Reserved for reviewed updates.")
-    parser.add_argument("--force", action="store_true", help="Include already verified coordinates.")
+    parser.add_argument(
+        "--force", action="store_true", help="Include already verified coordinates."
+    )
     args = parser.parse_args()
 
     if args.apply:
-        raise SystemExit("Apply mode is intentionally not implemented until results are reviewed.")
+        raise SystemExit(
+            "Apply mode is intentionally not implemented until results are reviewed."
+        )
 
     client = GoogleGeocodingClient(get_settings())
     for destination in repository.list_destinations():
-        if destination.coordinates and destination.coordinates.verification_status == "verified" and not args.force:
+        if (
+            destination.coordinates
+            and destination.coordinates.verification_status == "verified"
+            and not args.force
+        ):
             continue
         result = await client.geocode_destination(f"{destination.name}, Sri Lanka")
         print(
             {
                 "name": destination.name,
-                "currentCoordinates": destination.coordinates.model_dump() if destination.coordinates else None,
+                "currentCoordinates": destination.coordinates.model_dump()
+                if destination.coordinates
+                else None,
                 "googleResultAvailable": result is not None,
             },
         )

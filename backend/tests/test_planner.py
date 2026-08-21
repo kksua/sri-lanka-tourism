@@ -1,3 +1,5 @@
+from itertools import pairwise
+
 import pytest
 from httpx import ASGITransport, AsyncClient
 
@@ -29,7 +31,8 @@ def test_geographic_distance_uses_seed_coordinates() -> None:
     kandy = repository.get_by_name("Kandy")
     assert colombo is not None
     assert kandy is not None
-    assert calculate_geographic_distance(colombo.coordinates, kandy.coordinates) is not None
+    assert calculate_geographic_distance(
+        colombo.coordinates, kandy.coordinates) is not None
 
 
 @pytest.mark.asyncio
@@ -77,7 +80,7 @@ async def test_itinerary_routes_follow_consecutive_day_bases() -> None:
     days = response.json()["days"]
     assert days[0]["route"]["from"] == "Colombo"
     assert days[0]["route"]["to"] == days[0]["base"]
-    for previous_day, current_day in zip(days, days[1:]):
+    for previous_day, current_day in pairwise(days):
         assert current_day["route"]["from"] == previous_day["base"]
         assert current_day["route"]["to"] == current_day["base"]
 
@@ -239,7 +242,8 @@ async def test_refine_adds_requested_theme() -> None:
         for destination in repository.list_destinations()
         if destination.name in destination_names
     ]
-    assert any("beach" in destination.themes for destination in refined_destinations)
+    assert any(
+        "beach" in destination.themes for destination in refined_destinations)
 
 
 @pytest.mark.asyncio

@@ -7,7 +7,9 @@ BANNED_TOPICS = ("hotel", "flight", "price", "budget", "taxi booking", "book tra
 def validate_itinerary(itinerary: ItineraryResult, context: TripContext) -> list[str]:
     warnings: list[str] = []
     if len(itinerary.days) != context.days:
-        warnings.append("The itinerary day count was corrected to match the requested duration.")
+        warnings.append(
+            "The itinerary day count was corrected to match the requested duration."
+        )
 
     serialized = itinerary.model_dump_json().casefold()
     for topic in BANNED_TOPICS:

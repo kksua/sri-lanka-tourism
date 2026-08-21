@@ -21,7 +21,9 @@ async def generate_itinerary(
     return await orchestrator.generate(context)
 
 
-@router.post("/{session_id}/refine", response_model=ItineraryResult, response_model_by_alias=True)
+@router.post(
+    "/{session_id}/refine", response_model=ItineraryResult, response_model_by_alias=True
+)
 async def refine_itinerary(
     session_id: str,
     request: RefineRequest,

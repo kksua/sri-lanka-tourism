@@ -181,7 +181,10 @@ class TravelPlannerOrchestrator:
 
         preferred_themes = list(context.preferred_themes)
         for theme, keywords in THEME_KEYWORDS.items():
-            if any(keyword in normalized for keyword in keywords) and theme not in preferred_themes:
+            if (
+                any(keyword in normalized for keyword in keywords)
+                and theme not in preferred_themes
+            ):
                 preferred_themes.append(theme)  # type: ignore[arg-type]
         if preferred_themes != context.preferred_themes:
             updates["preferred_themes"] = preferred_themes
@@ -205,8 +208,7 @@ class TravelPlannerOrchestrator:
 
     def _extract_starting_location(self, normalized_message: str) -> str | None:
         if not any(
-            phrase in normalized_message
-            for phrase in ("start", "starting", "begin", "from")
+            phrase in normalized_message for phrase in ("start", "starting", "begin", "from")
         ):
             return None
 
@@ -248,9 +250,7 @@ class TravelPlannerOrchestrator:
         start_origin = self._resolve_start_origin(context.starting_location)
         route_destinations = destinations.copy()
         start_destination = (
-            repository.get_by_name(start_origin.name)
-            if start_origin is not None
-            else None
+            repository.get_by_name(start_origin.name) if start_origin is not None else None
         )
 
         if start_destination is not None and any(
@@ -262,8 +262,7 @@ class TravelPlannerOrchestrator:
                 if destination.name != start_destination.name
             ]
             return (
-                [start_destination]
-                + optimise_route(start_destination.coordinates, remaining),
+                [start_destination] + optimise_route(start_destination.coordinates, remaining),
                 start_origin,
             )
 
@@ -281,9 +280,7 @@ class TravelPlannerOrchestrator:
         feasible_required_count = max(MINIMUM_REQUIRED_DESTINATION_COUNT, context.days)
         required_names = set(context.required_destinations)
         required_destinations = [
-            destination
-            for destination in destinations
-            if destination.name in required_names
+            destination for destination in destinations if destination.name in required_names
         ]
         must_see_destinations = required_destinations[:feasible_required_count]
         must_see_names = {destination.name for destination in must_see_destinations}
@@ -298,11 +295,11 @@ class TravelPlannerOrchestrator:
             for destination in required_destinations
             if destination.name not in must_see_names
         ]
-        skipped_copy = f" Other selected destinations can be added by increasing the trip length."
+        skipped_copy = (
+            " Other selected destinations can be added by increasing the trip length."
+        )
         if skipped:
-            skipped_copy = (
-                f" {', '.join(skipped)} can be added by increasing the trip length."
-            )
+            skipped_copy = f" {', '.join(skipped)} can be added by increasing the trip length."
 
         return (
             filtered_destinations,
@@ -364,11 +361,7 @@ class TravelPlannerOrchestrator:
         ]
 
         for day_number, destination in enumerate(day_destinations, start=1):
-            previous = (
-                day_destinations[day_number - 2]
-                if day_number > 1
-                else start_origin
-            )
+            previous = day_destinations[day_number - 2] if day_number > 1 else start_origin
             if previous is not None and previous.name == destination.name:
                 previous = None
             route = (
@@ -395,9 +388,7 @@ class TravelPlannerOrchestrator:
                 ),
             )
 
-        route_note = (
-            "Actual travel time depends on traffic, road conditions, stops and the chosen transport method."
-        )
+        route_note = "Actual travel time depends on traffic, road conditions, stops and the chosen transport method."
         warnings = [route_note]
         return ItineraryResult(
             sessionId=session_id,

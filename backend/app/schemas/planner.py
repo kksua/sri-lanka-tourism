@@ -25,7 +25,9 @@ class TripContext(BaseModel):
     days: int = Field(ge=1, le=21)
     month: str
     starting_location: str = Field(alias="startingLocation", min_length=2, max_length=80)
-    preferred_themes: list[DestinationTheme] = Field(default_factory=list, alias="preferredThemes")
+    preferred_themes: list[DestinationTheme] = Field(
+        default_factory=list, alias="preferredThemes"
+    )
     pace: TripPace = "balanced"
     required_destinations: list[str] = Field(default_factory=list, alias="requiredDestinations")
     excluded_destinations: list[str] = Field(default_factory=list, alias="excludedDestinations")

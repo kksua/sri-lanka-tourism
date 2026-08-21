@@ -15,7 +15,10 @@ async def main() -> None:
 
     for case in cases:
         itinerary = await orchestrator.generate(TripContext.model_validate(case["input"]))
-        if "matches_day_count" in case["checks"] and len(itinerary.days) != case["input"]["days"]:
+        if (
+            "matches_day_count" in case["checks"]
+            and len(itinerary.days) != case["input"]["days"]
+        ):
             failures.append(f"{case['name']}: day count mismatch")
         if "includes_required" in case["checks"]:
             for destination in case["input"]["requiredDestinations"]:

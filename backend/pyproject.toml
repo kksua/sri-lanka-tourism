@@ -25,7 +25,11 @@ dev = [
 [tool.ruff]
 line-length = 96
 target-version = "py311"
-exclude = ["build"]
+exclude = [   
+   ".venv",
+    "build",
+    "dist",
+    "*.egg-info",]
 
 [tool.ruff.lint]
 extend-ignore = ["B008"]

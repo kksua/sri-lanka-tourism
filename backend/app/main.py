@@ -16,9 +16,12 @@ settings = get_settings()
 app = FastAPI(title="Sri Lanka Travel Planner API", version="0.1.0")
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[settings.frontend_origin],
+    allow_origins=[
+        "http://localhost:5173",
+        "https://sri-lanka-tourism-blond.vercel.app",
+    ],
     allow_credentials=False,
-    allow_methods=["GET", "POST"],
+    allow_methods=["GET", "POST", "OPTIONS"],
     allow_headers=["Content-Type", "Authorization"],
 )
 app.include_router(planner_router)

@@ -21,7 +21,9 @@ def calculate_geographic_distance(
     return 2 * radius_km * asin(sqrt(value))
 
 
-def approximate_route_leg(origin: DestinationRecord, destination: DestinationRecord) -> RouteLeg:
+def approximate_route_leg(
+    origin: DestinationRecord, destination: DestinationRecord
+) -> RouteLeg:
     distance = calculate_geographic_distance(origin.coordinates, destination.coordinates)
     if distance is None:
         return RouteLeg(
@@ -64,11 +66,13 @@ def optimise_route(
     while remaining:
         next_destination = min(
             remaining,
-            key=lambda destination: calculate_geographic_distance(
-                current,
-                destination.coordinates,
-            )
-            or 10_000,
+            key=lambda destination: (
+                calculate_geographic_distance(
+                    current,
+                    destination.coordinates,
+                )
+                or 10_000
+            ),
         )
         ordered.append(next_destination)
         remaining.remove(next_destination)

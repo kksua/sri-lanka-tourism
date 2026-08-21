@@ -72,9 +72,7 @@ class DestinationRepository:
                 raw["recommendedDays"] = 2 if len(raw["attractions"]) >= 4 else 1
             if "suitableMonths" not in raw:
                 months = {
-                    month
-                    for theme in raw["themes"]
-                    for month in SEED_MONTHS.get(theme, [])
+                    month for theme in raw["themes"] for month in SEED_MONTHS.get(theme, [])
                 }
                 raw["suitableMonths"] = sorted(months)
             raw.setdefault("activities", raw["attractions"])
